@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Precast Demo</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+
+  <!-- Loading overlay -->
+  <div id="site-loader" role="status" aria-live="polite" aria-label="Page is loading">
+    <div class="loader-card" id="loader-card">
+      <div class="spinner" aria-hidden="true">
+        <!-- accessible SVG spinner -->
+        <svg viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+          <circle cx="24" cy="24" r="18" fill="none" class="ring"/>
+        </svg>
+      </div>
+      <div class="loader-text">Loading…</div>
+    </div>
+  </div>
+
+
+  <!-- Fixed Header -->
+  <header class="main-header">
+     <img src="logo.png" alt="Company Logo" class="header-logo" />
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    <nav class="navbar">
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+
+        <li class="dropdown">
+          <a href="hollow-core-slabs.html">Elements</a>
+          <ul class="submenu">
+            <li><a href="hollow-core-slabs.html">Hollow core slabs</a></li>
+            <li><a href="columns.html">Columns</a></li>
+            <li><a href="beams.html">Beams (RCC/PT)</a></li>
+            <li><a href="solid-slabs.html">Solid slabs</a></li>
+            <li><a href="wall-panels.html">Wall Panels</a></li>
+            <li><a href="insulated-wall-panels.html">Insulated Wall Panels</a></li>
+            <li><a href="pre-stressed-purlins.html">Pre-stressed purlins</a></li>
+          </ul>
+        </li>
+
+        
+
+        <li class="dropdown">
+          <a href="overview.html">Precast Products ▾</a>
+          <ul class="submenu">
+            <li class="dropdown">
+              <a href="overview.html">Storage Tanks ▸</a>
+              <ul class="submenu">
+                <li><a href="overview.html">Overview</a></li>
+                <li><a href="material-spec.html">Material Specification</a></li>
+                <li><a href="design-parameters.html">Design Parameters</a></li>
+                <li><a href="small-domestic-tanks.html">Small Domestic Tanks</a></li>
+                <li><a href="monolithic-tanks.html">Monolithic Tanks</a></li>
+                <li><a href="custom-factory-assembled.html">Custom Factory Assembled Tanks</a></li>
+                <li><a href="custom-onsite-assembly.html">Custom On Site Assembly Tanks</a></li>
+                <li><a href="special-purpose-tanks.html">Special Purpose Tanks</a></li>
+                <li><a href="summarized-applications.html">Summarized Applications</a></li>
+                <li><a href="installation-procedure.html">Installation Procedure</a></li>
+                <li><a href="dos-and-donts.html">Dos and Don'ts</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="u-drain.html">Storm Water Drains & Sewer Systems ▸</a>
+              <ul class="submenu">
+                <li><a href="u-drain.html">U Drain</a></li>
+                <li><a href="manhole-chamber.html">Manhole Chamber</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="cable-trenches.html">Telecom Electrical Sectors ▸</a>
+              <ul class="submenu">
+                <li><a href="cable-trenches.html">Cable Trenches</a></li>
+                <li><a href="telecommunication-chambers.html">Telecommunication Chambers</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="compound-wall.html">Boundary Wall & Soil Retaining Wall ▸</a>
+              <ul class="submenu">
+                <li><a href="compound-wall.html">Compound Wall & Retaining Wall</a></li>
+                <li><a href="retaining-wall-hollow.html">Retaining Wall using Hollow Core Slabs</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="hollow-core-cladding.html">Cladding Wall ▸</a>
+              <ul class="submenu">
+                <li><a href="hollow-core-cladding.html">Hollow Core Wall as Cladding Wall</a></li>
+                <li><a href="sleek-walls.html">Sleek Walls</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="precast-tiles.html">Architectural Products ▸</a>
+              <ul class="submenu">
+                <li><a href="precast-tiles.html">Precast Concrete Tiles</a></li>
+                <li><a href="concrete-facades.html">Concrete Facades</a></li>
+                <li><a href="concrete-furniture.html">Concrete Furniture</a></li>
+                <li><a href="planters.html">Planters</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="footing.html">Foundation ▸</a>
+              <ul class="submenu">
+                <li><a href="footing.html">Footing</a></li>
+                <li><a href="pedestals.html">Pedestals</a></li>
+                <li><a href="tie-beams.html">Tie beams</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main >
+<!-- HERO VIDEO SECTION -->
+<section class="hero-video hero-4by3">
+  <video class="bg-video" autoplay muted loop playsinline>
+    <source src="home.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="video-overlay">
+    <h1>Building Dreams, One Panel at a Time</h1>
+    <a href="products.html" class="btn-primary">See Products</a>
+  </div>
+</section>
+
+
+
+
+
+
+<section class="aboutus-section">
+  <div class="aboutus-container">
+    <!-- LEFT SIDE -->
+    <div class="aboutus-left">
+      <div class="aboutus-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/x0-EFba-JIo?si=wkXkgm0lxmk9O44a" title="TVK Precast Video" 
+frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+referrerpolicy="strict-origin-when-cross-origin" 
+allowfullscreen></iframe>
+      </div>
+      <p class="aboutus-subtext">
+        TVK Precast uses cutting-edge technology to create precast concrete precisely cast in a controlled environment and properly cured.
+        The TVK Precast plant meets international production standards and safety norms.
+      </p>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="aboutus-right">
+      <h2 class="aboutus-heading">ABOUT US</h2>
+      <h3 class="aboutus-subheading">ABOUT TVK PRECAST</h3>
+      <p>
+        TVK Precast is a diversified unit of the TVK Group which is primarily involved in planning, execution and transfer of specialised
+        projects in the field of construction like road overbridges, railway bridges and such other structures, besides highway enhancement.
+      </p>
+      <p>
+        TVK Precast has set up India’s first state-of-the-art precast plant in Oragadam, one of the fastest growing industrial centres.
+        Backed by Finnish expertise, TVK Precast’s in-house structural designing team takes up turn-key projects right from the structural
+        design stage right up to the erection of precast elements.
+      </p>
+      <a href="about.html" class="aboutus-btn">See More</a>
+    </div>
+  </div>
+</section>
+
+
+
+<!--services section-->
+<section class="services-full">
+  <h2>Our Services</h2>
+  <p class="subtitle">
+    Modernize your rounded icon box with a bold, minimal style. Perfect for modern websites.
+  </p>
+
+  <div class="services-grid">
+    <!-- Service 1 -->
+    <div class="service-box">
+      <div class="icon-circle"><i class="fas fa-cubes"></i></div>
+      <h3>Elements</h3>
+      <p>
+        High-quality precast concrete elements engineered for precision and durability.
+      </p>
+    </div>
+
+    <!-- Service 2 -->
+    <div class="service-box">
+      <div class="icon-circle"><i class="fas fa-building"></i></div>
+      <h3>Building Solutions</h3>
+      <p>
+        Complete modular and industrial building solutions for faster, efficient construction.
+      </p>
+    </div>
+
+    <!-- Service 3 -->
+    <div class="service-box">
+      <div class="icon-circle"><i class="fas fa-industry"></i></div>
+      <h3>Precast Products</h3>
+      <p>
+        Innovative precast products that redefine construction quality and speed.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Font Awesome for icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+
+<section class="toilet-showcase-row fullwidth">
+  <!-- Toilet 1 -->
+  <div class="showcase-item">
+    <img src="toilet1.jpg" alt="User Friendly Precast Toilet">
+    <div class="overlay">
+      <h4>USER FRIENDLY</h4>
+      <a href="toilet1.html" class="more-btn">more</a>
+    </div>
+  </div>
+
+  <!-- Toilet 2 -->
+  <div class="showcase-item">
+    <img src="toilet2.jpg" alt="Easy Washable Precast Toilet">
+    <div class="overlay">
+      <h4>EASY WASHABLE</h4>
+      <a href="toilet2.html" class="more-btn">more</a>
+    </div>
+  </div>
+
+  <!-- Text + Button -->
+  <div class="showcase-content">
+    <h3>NEW PRODUCT</h3>
+    <h2>READY MADE PRECAST TOILETS</h2>
+    <a href="toilets.html" class="explore-btn">EXPLORE NOW</a>
+  </div>
+</section>
+
+
+
+<section class="benefits-section">
+  <h2 class="benefits-title">Benefits & Advantages</h2>
+  <div class="benefits-grid">
+    <button class="benefit-btn"><i class="fa-solid fa-cube"></i> SPACE SAVER DESIGN</button>
+    <button class="benefit-btn"><i class="fa-solid fa-dumbbell"></i> HIGH STRENGTH</button>
+    <button class="benefit-btn"><i class="fa-solid fa-wallet"></i> AFFORDABLE PRICE</button>
+    <button class="benefit-btn"><i class="fa-solid fa-industry"></i> FACTORY MADE</button>
+    <button class="benefit-btn"><i class="fa-solid fa-flask"></i> CHEMICALLY INERT</button>
+    <button class="benefit-btn"><i class="fa-solid fa-shield-halved"></i> HIGHLY DURABLE</button>
+    <button class="benefit-btn"><i class="fa-solid fa-bolt"></i> EASY & QUICK INSTALLATION</button>
+    <button class="benefit-btn"><i class="fa-solid fa-screwdriver-wrench"></i> MAINTENANCE FREE</button>
+    <button class="benefit-btn"><i class="fa-solid fa-leaf"></i> ECO FRIENDLY</button>
+    <button class="benefit-btn"><i class="fa-solid fa-truck-moving"></i> EASILY RELOCATED</button>
+  </div>
+</section>
+
+
+
+
+
+<section class="project-completed-section">
+  <div class="project-left">
+    <h2 class="projects-main-title">TVK PRECAST PRODUCTS</h2>
+    <h3 class="projects-sub-title">PROJECTS COMPLETED</h3>
+
+    <div class="projects-stats">
+      <div class="stat-box">
+        <h4>Completed Projects</h4>
+        <p class="stat-number">54<span>+</span></p>
+      </div>
+      <div class="stat-box">
+        <h4>Products</h4>
+        <p class="stat-number">2,500<span>+</span></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-right">
+    <div class="projects-progress">
+      <div class="progress-item">
+        <span class="progress-label">WAREHOUSE</span>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width:87%">87%</div>
+        </div>
+      </div>
+
+      <div class="progress-item">
+        <span class="progress-label">WATER TANK</span>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width:81%">81%</div>
+        </div>
+      </div>
+
+      <div class="progress-item">
+        <span class="progress-label">BUILDINGS</span>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width:72%">72%</div>
+        </div>
+      </div>
+
+      <div class="progress-item">
+        <span class="progress-label">DRAINS</span>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width:93%">93%</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="brochure-section">
+  <div class="brochure-content">
+    <h2 class="brochure-title">DOWNLOAD BROCHURE</h2>
+    <p class="brochure-text">ALL PRODUCTS BROCHURE AVAILABLE!</p>
+    <a href="TVK Precast_Brochure (1).pdf" class="brochure-btn" target="_blank">
+      <i class="fa-solid fa-download"></i> DOWNLOAD NOW
+    </a>
+  </div>
+</section>
+
+
+
+
+
+
+<section class="clients-section">
+  <div class="clients-header">
+    <h4 class="clients-top-title">GLOBAL RELATIONSHIPS</h4>
+    <h2 class="clients-main-title">TVK CLIENTS</h2>
+    <p class="clients-sub-text">We are proud to be associated with top global brands and trusted partners.</p>
+  </div>
+
+  <div class="clients-logos">
+    <div class="client-box">
+      <img src="images/itc-logo.png" alt="ITC Logo">
+      <h5>ITC</h5>
+    </div>
+
+    <div class="client-box">
+      <img src="images/smcc-logo.png" alt="SMCC Logo">
+      <h5>SMCC</h5>
+    </div>
+
+    <div class="client-box">
+      <img src="images/TVK-logo.png" alt="TVK Precast Logo">
+      <h5>TVK PRECAST</h5>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+  </main>
+
+  <!-- Footer Section -->
+<footer class="site-footer">
+  <div class="footer-container">
+    <!-- Left: Logo + Tagline -->
+    <div class="footer-section">
+      <img src="footerlogo.png" alt="Company Logo" class="footer-logo" />
+      <p class="footer-tagline">INDIA’S FIRST FULLY AUTOMATED PRECAST FACTORY</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/t_v_k_precast_pvt_ltd/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <!-- Middle: Quick Links -->
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="hollow-core-slabs.html">Elements</a></li>
+        <li><a href="overview.html">Precast Products</a></li>
+        <li><a href="products.html">Projects</a></li>
+      </ul>
+    </div>
+
+    <!-- Right: Contact Info -->
+    <div class="footer-section">
+      <h3>Get In Touch</h3>
+      <p>180/3, Thippampalayam,<br>
+         Thippampalayam (PO), Chennimalai - 638051.</p>
+      <p><a href="mailto:tvkprecast@gmail.com">tvkprecast@gmail.com</a></p>
+      <p><a href="tel:+918807190909">+91 88071 90909</a></p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© Copyright 2020 | Powered by <strong>TVK</strong></p>
+  </div>
+</footer>
+
+<!-- Font Awesome for icons -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js" crossorigin="anonymous"></script>
+
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/919488276520" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+    <div class="whatsapp-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="white">
+        <path d="M19.11 17.09c-.29-.14-1.71-.84-1.97-.93-.27-.1-.46-.14-.65.14-.19.29-.74.93-.9 1.12-.17.19-.33.21-.62.07-.29-.14-1.23-.45-2.35-1.44-.87-.77-1.45-1.72-1.62-2-.17-.29-.02-.44.12-.58.12-.12.29-.33.43-.5.14-.17.19-.29.29-.48.1-.19.05-.36-.02-.5-.07-.14-.65-1.56-.89-2.13-.23-.55-.47-.48-.65-.48-.17 0-.36 0-.55 0-.19 0-.5.07-.76.36-.26.29-1 1-.97 2.42.02 1.43 1.02 2.81 1.17 3 .14.19 2 3.11 4.89 4.37.68.29 1.21.46 1.62.59.68.22 1.3.19 1.79.12.55-.08 1.71-.69 1.95-1.36.24-.67.24-1.25.17-1.36-.07-.12-.26-.19-.55-.33z"/>
+      </svg>
+    </div>
+    <span class="whatsapp-text">WhatsApp Us</span>
+  </a>
+
+  <script src="script.js"></script>
+  <button id="scrollTopBtn" aria-label="Scroll to top">
+  ↑
+</button>
+</body>
+</html>
