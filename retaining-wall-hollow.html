@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Precast Demo</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+
+  <!-- Loading overlay -->
+  <div id="site-loader" role="status" aria-live="polite" aria-label="Page is loading">
+    <div class="loader-card" id="loader-card">
+      <div class="spinner" aria-hidden="true">
+        <!-- accessible SVG spinner -->
+        <svg viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+          <circle cx="24" cy="24" r="18" fill="none" class="ring"/>
+        </svg>
+      </div>
+      <div class="loader-text">Loading…</div>
+    </div>
+  </div>
+
+
+  <!-- Fixed Header -->
+  <header class="main-header">
+     <img src="logo.png" alt="Company Logo" class="header-logo" />
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    <nav class="navbar">
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+
+        <li class="dropdown">
+          <a href="hollow-core-slabs.html">Elements</a>
+          <ul class="submenu">
+            <li><a href="hollow-core-slabs.html">Hollow core slabs</a></li>
+            <li><a href="columns.html">Columns</a></li>
+            <li><a href="beams.html">Beams (RCC/PT)</a></li>
+            <li><a href="solid-slabs.html">Solid slabs</a></li>
+            <li><a href="wall-panels.html">Wall Panels</a></li>
+            <li><a href="insulated-wall-panels.html">Insulated Wall Panels</a></li>
+            <li><a href="pre-stressed-purlins.html">Pre-stressed purlins</a></li>
+          </ul>
+        </li>
+
+        
+
+        <li class="dropdown">
+          <a href="overview.html">Precast Products ▾</a>
+          <ul class="submenu">
+            <li class="dropdown">
+              <a href="overview.html">Storage Tanks ▸</a>
+              <ul class="submenu">
+                <li><a href="overview.html">Overview</a></li>
+                <li><a href="material-spec.html">Material Specification</a></li>
+                <li><a href="design-parameters.html">Design Parameters</a></li>
+                <li><a href="small-domestic-tanks.html">Small Domestic Tanks</a></li>
+                <li><a href="monolithic-tanks.html">Monolithic Tanks</a></li>
+                <li><a href="custom-factory-assembled.html">Custom Factory Assembled Tanks</a></li>
+                <li><a href="custom-onsite-assembly.html">Custom On Site Assembly Tanks</a></li>
+                <li><a href="special-purpose-tanks.html">Special Purpose Tanks</a></li>
+                <li><a href="summarized-applications.html">Summarized Applications</a></li>
+                <li><a href="installation-procedure.html">Installation Procedure</a></li>
+                <li><a href="dos-and-donts.html">Dos and Don'ts</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="u-drain.html">Storm Water Drains & Sewer Systems ▸</a>
+              <ul class="submenu">
+                <li><a href="u-drain.html">U Drain</a></li>
+                <li><a href="manhole-chamber.html">Manhole Chamber</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="cable-trenches.html">Telecom Electrical Sectors ▸</a>
+              <ul class="submenu">
+                <li><a href="cable-trenches.html">Cable Trenches</a></li>
+                <li><a href="telecommunication-chambers.html">Telecommunication Chambers</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="compound-wall.html">Boundary Wall & Soil Retaining Wall ▸</a>
+              <ul class="submenu">
+                <li><a href="compound-wall.html">Compound Wall & Retaining Wall</a></li>
+                <li><a href="retaining-wall-hollow.html">Retaining Wall using Hollow Core Slabs</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="hollow-core-cladding.html">Cladding Wall ▸</a>
+              <ul class="submenu">
+                <li><a href="hollow-core-cladding.html">Hollow Core Wall as Cladding Wall</a></li>
+                <li><a href="sleek-walls.html">Sleek Walls</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="precast-tiles.html">Architectural Products ▸</a>
+              <ul class="submenu">
+                <li><a href="precast-tiles.html">Precast Concrete Tiles</a></li>
+                <li><a href="concrete-facades.html">Concrete Facades</a></li>
+                <li><a href="concrete-furniture.html">Concrete Furniture</a></li>
+                <li><a href="planters.html">Planters</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="footing.html">Foundation ▸</a>
+              <ul class="submenu">
+                <li><a href="footing.html">Footing</a></li>
+                <li><a href="pedestals.html">Pedestals</a></li>
+                <li><a href="tie-beams.html">Tie beams</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main >
+  
+<!-- PRECAST CONCRETE RETAINING WALL SECTION -->
+<section class="retaining-wall">
+  <h2>PRECAST CONCRETE RETAINING WALL</h2>
+  <p class="intro-text">
+    A Hollow Core Slab retaining wall is designed and constructed to resist lateral soil pressures when the desired change in ground elevation exceeds the soil’s angle of repose.
+  </p>
+
+  <!-- FIRST SECTION -->
+  <section class="retaining-gallery-section">
+    <h3>TYPICAL CROSS SECTION & CAST IN-SITU CONCRETE</h3>
+    <div class="retaining-gallery">
+      <div class="retaining-item">
+        <h4>TYPICAL CROSS SECTION OF A HC SLAB 6/200</h4>
+        <img src="cross-section.png" alt="Typical cross section of HC slab 6/200">
+      </div>
+
+      <div class="retaining-item">
+        <h4>HCS PLACED CAST IN-SITU CONCRETE</h4>
+        <img src="cast-in-situ.png" alt="HCS placed cast in-situ concrete">
+      </div>
+    </div>
+  </section>
+
+  <!-- SECOND SECTION -->
+  <section class="retaining-gallery-section">
+    <h3>RETAINING WALL TYPES</h3>
+    <div class="retaining-gallery">
+      <div class="retaining-item">
+        <h4>TYPE 1</h4>
+        <img src="type1.jpg" alt="Type 1 retaining wall">
+      </div>
+
+      <div class="retaining-item">
+        <h4>TYPE 2</h4>
+        <img src="type2.jpg" alt="Type 2 retaining wall">
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFITS SECTION -->
+  <div class="benefits">
+    <h3>BENEFITS</h3>
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <h5>Reduced Site Impact</h5>
+        <p>
+          Precast HCS retaining walls are manufactured off-site and delivered on demand, significantly reducing truck traffic, dust, noise, and debris from formwork associated with cast-in-place products.
+        </p>
+      </div>
+
+      <div class="benefit-card">
+        <h5>Durability</h5>
+        <p>
+          Concrete is strong and durable, offering a sustainable solution that will not rust or burn and has a service life exceeding 100 years.
+        </p>
+      </div>
+
+      <div class="benefit-card">
+        <h5>Better Quality</h5>
+        <p>
+          Manufactured in a controlled plant environment, eliminating site-related errors like temperature changes, poor curing, or inconsistent material quality.
+        </p>
+      </div>
+
+      <div class="benefit-card">
+        <h5>Quick and Easy Installation</h5>
+        <p>
+          Precast retaining walls are cast in the factory, requiring no formwork at the site — they can be directly erected onto the tongue while installing.
+        </p>
+      </div>
+
+      <div class="benefit-card">
+        <h5>Low Material Usage</h5>
+        <p>
+          The presence of longitudinal voids in the HCS cross-section leads to reduced raw material usage, making it cost-effective and efficient.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONNECTION DETAILS -->
+  <div class="connection-details">
+    <h4>TYPICAL CONNECTION DETAILS</h4>
+    <p>HCS Retaining Wall Engineered for:</p>
+    <ul>
+      <li>Lateral Pressures</li>
+      <li>High Water Table</li>
+    </ul>
+  </div>
+</section>
+
+
+
+  </main>
+
+  <!-- Footer Section -->
+<footer class="site-footer">
+  <div class="footer-container">
+    <!-- Left: Logo + Tagline -->
+    <div class="footer-section">
+      <img src="footerlogo.png" alt="Company Logo" class="footer-logo" />
+      <p class="footer-tagline">INDIA’S FIRST FULLY AUTOMATED PRECAST FACTORY</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/t_v_k_precast_pvt_ltd/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <!-- Middle: Quick Links -->
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="hollow-core-slabs.html">Elements</a></li>
+        <li><a href="overview.html">Precast Products</a></li>
+        <li><a href="products.html">Projects</a></li>
+      </ul>
+    </div>
+
+    <!-- Right: Contact Info -->
+    <div class="footer-section">
+      <h3>Get In Touch</h3>
+      <p>180/3, Thippampalayam,<br>
+         Thippampalayam (PO), Chennimalai - 638051.</p>
+      <p><a href="mailto:tvkprecast@gmail.com">tvkprecast@gmail.com</a></p>
+      <p><a href="tel:+918807190909">+91 88071 90909</a></p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© Copyright 2020 | Powered by <strong>TVK</strong></p>
+  </div>
+</footer>
+
+<!-- Font Awesome for icons -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js" crossorigin="anonymous"></script>
+
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/919488276520" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+    <div class="whatsapp-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="white">
+        <path d="M19.11 17.09c-.29-.14-1.71-.84-1.97-.93-.27-.1-.46-.14-.65.14-.19.29-.74.93-.9 1.12-.17.19-.33.21-.62.07-.29-.14-1.23-.45-2.35-1.44-.87-.77-1.45-1.72-1.62-2-.17-.29-.02-.44.12-.58.12-.12.29-.33.43-.5.14-.17.19-.29.29-.48.1-.19.05-.36-.02-.5-.07-.14-.65-1.56-.89-2.13-.23-.55-.47-.48-.65-.48-.17 0-.36 0-.55 0-.19 0-.5.07-.76.36-.26.29-1 1-.97 2.42.02 1.43 1.02 2.81 1.17 3 .14.19 2 3.11 4.89 4.37.68.29 1.21.46 1.62.59.68.22 1.3.19 1.79.12.55-.08 1.71-.69 1.95-1.36.24-.67.24-1.25.17-1.36-.07-.12-.26-.19-.55-.33z"/>
+      </svg>
+    </div>
+    <span class="whatsapp-text">WhatsApp Us</span>
+  </a>
+
+  <script src="script.js"></script>
+  <button id="scrollTopBtn" aria-label="Scroll to top">
+  ↑
+</button>
+</body>
+</html>

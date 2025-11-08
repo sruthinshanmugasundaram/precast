@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Precast Demo</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+
+  <!-- Loading overlay -->
+  <div id="site-loader" role="status" aria-live="polite" aria-label="Page is loading">
+    <div class="loader-card" id="loader-card">
+      <div class="spinner" aria-hidden="true">
+        <!-- accessible SVG spinner -->
+        <svg viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+          <circle cx="24" cy="24" r="18" fill="none" class="ring"/>
+        </svg>
+      </div>
+      <div class="loader-text">Loading…</div>
+    </div>
+  </div>
+
+
+  <!-- Fixed Header -->
+  <header class="main-header">
+     <img src="logo.png" alt="Company Logo" class="header-logo" />
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    <nav class="navbar">
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+
+        <li class="dropdown">
+          <a href="hollow-core-slabs.html">Elements</a>
+          <ul class="submenu">
+            <li><a href="hollow-core-slabs.html">Hollow core slabs</a></li>
+            <li><a href="columns.html">Columns</a></li>
+            <li><a href="beams.html">Beams (RCC/PT)</a></li>
+            <li><a href="solid-slabs.html">Solid slabs</a></li>
+            <li><a href="wall-panels.html">Wall Panels</a></li>
+            <li><a href="insulated-wall-panels.html">Insulated Wall Panels</a></li>
+            <li><a href="pre-stressed-purlins.html">Pre-stressed purlins</a></li>
+          </ul>
+        </li>
+
+        
+
+        <li class="dropdown">
+          <a href="overview.html">Precast Products ▾</a>
+          <ul class="submenu">
+            <li class="dropdown">
+              <a href="overview.html">Storage Tanks ▸</a>
+              <ul class="submenu">
+                <li><a href="overview.html">Overview</a></li>
+                <li><a href="material-spec.html">Material Specification</a></li>
+                <li><a href="design-parameters.html">Design Parameters</a></li>
+                <li><a href="small-domestic-tanks.html">Small Domestic Tanks</a></li>
+                <li><a href="monolithic-tanks.html">Monolithic Tanks</a></li>
+                <li><a href="custom-factory-assembled.html">Custom Factory Assembled Tanks</a></li>
+                <li><a href="custom-onsite-assembly.html">Custom On Site Assembly Tanks</a></li>
+                <li><a href="special-purpose-tanks.html">Special Purpose Tanks</a></li>
+                <li><a href="summarized-applications.html">Summarized Applications</a></li>
+                <li><a href="installation-procedure.html">Installation Procedure</a></li>
+                <li><a href="dos-and-donts.html">Dos and Don'ts</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="u-drain.html">Storm Water Drains & Sewer Systems ▸</a>
+              <ul class="submenu">
+                <li><a href="u-drain.html">U Drain</a></li>
+                <li><a href="manhole-chamber.html">Manhole Chamber</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="cable-trenches.html">Telecom Electrical Sectors ▸</a>
+              <ul class="submenu">
+                <li><a href="cable-trenches.html">Cable Trenches</a></li>
+                <li><a href="telecommunication-chambers.html">Telecommunication Chambers</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="compound-wall.html">Boundary Wall & Soil Retaining Wall ▸</a>
+              <ul class="submenu">
+                <li><a href="compound-wall.html">Compound Wall & Retaining Wall</a></li>
+                <li><a href="retaining-wall-hollow.html">Retaining Wall using Hollow Core Slabs</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="hollow-core-cladding.html">Cladding Wall ▸</a>
+              <ul class="submenu">
+                <li><a href="hollow-core-cladding.html">Hollow Core Wall as Cladding Wall</a></li>
+                <li><a href="sleek-walls.html">Sleek Walls</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="precast-tiles.html">Architectural Products ▸</a>
+              <ul class="submenu">
+                <li><a href="precast-tiles.html">Precast Concrete Tiles</a></li>
+                <li><a href="concrete-facades.html">Concrete Facades</a></li>
+                <li><a href="concrete-furniture.html">Concrete Furniture</a></li>
+                <li><a href="planters.html">Planters</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="footing.html">Foundation ▸</a>
+              <ul class="submenu">
+                <li><a href="footing.html">Footing</a></li>
+                <li><a href="pedestals.html">Pedestals</a></li>
+                <li><a href="tie-beams.html">Tie beams</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main >
+    <header class="spt-header">
+    <h1>SUMMARISED APPLICATIONS</h1>
+    <p>Precast Tanks designed for industrial, commercial, and agricultural storage applications.</p>
+  </header>
+
+  <section class="tank-table-section">
+    <h2>Type of Tanks</h2>
+    <div class="tank-table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Type of Tank</th>
+            <th>Capacity</th>
+            <th>Applications</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Type of Tank">Small Domestic Tanks</td>
+            <td data-label="Capacity">500 Ltrs to 5000 Ltrs</td>
+            <td data-label="Applications">
+              <ul>
+                <li>Domestic and small industrial usages.</li>
+                <li>For water storage, septic systems, stormwater management, or wastewater treatment.</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td data-label="Type of Tank">Monolithic Tanks</td>
+            <td data-label="Capacity">6 KL to 12.5 KL</td>
+            <td data-label="Applications">
+              <ul>
+                <li>Used in areas where large-volume of water storage is required.</li>
+                <li>Suitable for medium size residential and industries.</li>
+                <li>Can also be used as septic tanks, stormwater storage and management tanks, wastewater treatment tanks etc.</li>
+                <li>An array / battery of tanks also can be used by connecting them for higher volume requirements.</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td data-label="Type of Tank">Custom Factory Assembled Tanks</td>
+            <td data-label="Capacity">15 KL to 45 KL</td>
+            <td data-label="Applications">
+              <ul>
+                <li>Suitable for projects where specific design considerations or environmental factors make off-site manufacturing a preferred option.</li>
+                <li>Tailored solution that meets the unique requirements of the application.</li>
+                <li>Commonly used in big Residential Complexes, Industries for storing the water and other purposes like storm water storage, wastewater treatment and industrial purposes.</li>
+                <li>An array / battery of tanks also can be used by connecting them for higher volume requirements.</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td data-label="Type of Tank">Custom On-site Assembled Tanks</td>
+            <td data-label="Capacity">More than 45 KL</td>
+            <td data-label="Applications">
+              <ul>
+                <li>Water storage, industrial processes, wastewater treatment, and more.</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td data-label="Type of Tank">Special Purpose Tanks (To store other Liquids)</td>
+            <td data-label="Capacity">As per the Client’s requirements</td>
+            <td data-label="Applications">
+              <ul>
+                <li>To store any liquid other than water.</li>
+                <li>Used for wastewater treatment, ETP, chemical storage, septic tanks, oil storage, biogas storage, acid storage, fertilizer storage, etc.</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <section class="spt-intro">
+    <p>
+      We manufacture Special Purpose Tanks of various capacities as per the clients’ requirements for storing liquids other than water used in various industrial, commercial, and agricultural applications.
+    </p>
+    <p>
+      If the size is small or medium, the entire unit is precast at factory and transported to the site for erection. If the size is larger (above 45 KL), these tanks are built using precast concrete panels cast in the factory and assembled on-site.
+    </p>
+    <p>
+      Each tank design adheres to environmental and safety standards to ensure strength, containment, and compliance with industry norms.
+    </p>
+  </section>
+
+  <section class="spt-tank-section">
+    <h2>RECTANGULAR TANK</h2>
+    <div class="hollowcore-slider">
+    <div class="slider-track">
+      <img src="small_domestic_tank.jpg" alt="Hollow Core Slab 1">
+      <img src="water tank.jpeg" alt="Hollow Core Slab 2">
+      <img src="septis tank.jpg" alt="Hollow Core Slab 3">
+      <img src="industrial-water-tank.jpg" alt="Hollow Core Slab 4">
+      <img src="round-ferrocement-storage-tank.webp" alt="Hollow Core Slab 5">
+      <img src="TANK1.jpg" alt="Hollow Core Slab 6">
+      <img src="TANK2.jpg" alt="Hollow Core Slab 7">
+
+      <!-- Duplicate for seamless loop -->
+      <img src="small_domestic_tank.jpg" alt="Hollow Core Slab 1 duplicate">
+      <img src="water tank.jpeg" alt="Hollow Core Slab 2 duplicate">
+      <img src="septis tank.jpg" alt="Hollow Core Slab 3 duplicate">
+      <img src="industrial-water-tank.jpg" alt="Hollow Core Slab 4 duplicate">
+      <img src="round-ferrocement-storage-tank.webp" alt="Hollow Core Slab 5 duplicate">
+      <img src="TANK1.jpg" alt="Hollow Core Slab 6 duplicate">
+      <img src="TANK2.jpg" alt="Hollow Core Slab 7 duplicate">
+    </div>
+  </div>
+  <section class="rectangular-tank-section fade-in">
+      <div class="tank-header">
+        <h2><i class="fa-solid fa-cube"></i> Loads considered in the design for below ground tanks</h2>
+      </div>
+      <div class="tank-image-box">
+        <img src="DESIGN PARAMETER.png" alt="Typical Model of a Rectangular Tank">
+      </div>
+    </section>
+  </section>
+
+  <section class="spt-gallery">
+    <h2>PRECAST TANK GALLERY</h2>
+    <div class="spt-card-grid">
+
+      <div class="spt-card">
+        <img src="FACTORY MADE.jpg" alt="Factory Made">
+        <div class="spt-card-content"><h3>FACTORY MADE</h3></div>
+      </div>
+
+      <div class="spt-card">
+        <img src="LEAKAGE CHECK.webp" alt="Leakage Check">
+        <div class="spt-card-content"><h3>QUALITY / LEAKAGE CHECK</h3></div>
+      </div>
+
+      <div class="spt-card">
+        <img src="TRANSPORTATION.webp" alt="Transportation">
+        <div class="spt-card-content"><h3>TRANSPORTATION TO SITE</h3></div>
+      </div>
+
+  </section>
+  <section class="spt-gallery">
+    <h2>WATER TANK - INSTALLATION</h2>
+    <div class="spt-card-grid">
+      
+      <div class="spt-card">
+        <img src="excavation.jpg" alt="Excavation">
+        <div class="spt-card-content"><h3>EXCAVATION & BASE PREPARATION</h3></div>
+      </div>
+
+      <div class="spt-card">
+        <img src="positioning.webp" alt="Positioning">
+        <div class="spt-card-content"><h3>POSITIONING OF TANK</h3></div>
+      </div>
+
+ 
+
+      <div class="spt-card">
+        <img src="water tank.jpeg" alt="Tank Cover">
+        <div class="spt-card-content"><h3>POSITIONING OF TANK COVER</h3></div>
+      </div>
+
+    </div>
+  </section>
+
+  
+  </main>
+
+  <!-- Footer Section -->
+<footer class="site-footer">
+  <div class="footer-container">
+    <!-- Left: Logo + Tagline -->
+    <div class="footer-section">
+      <img src="footerlogo.png" alt="Company Logo" class="footer-logo" />
+      <p class="footer-tagline">INDIA’S FIRST FULLY AUTOMATED PRECAST FACTORY</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/t_v_k_precast_pvt_ltd/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <!-- Middle: Quick Links -->
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="hollow-core-slabs.html">Elements</a></li>
+        <li><a href="overview.html">Precast Products</a></li>
+        <li><a href="products.html">Projects</a></li>
+      </ul>
+    </div>
+
+    <!-- Right: Contact Info -->
+    <div class="footer-section">
+      <h3>Get In Touch</h3>
+      <p>180/3, Thippampalayam,<br>
+         Thippampalayam (PO), Chennimalai - 638051.</p>
+      <p><a href="mailto:tvkprecast@gmail.com">tvkprecast@gmail.com</a></p>
+      <p><a href="tel:+918807190909">+91 88071 90909</a></p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© Copyright 2020 | Powered by <strong>TVK</strong></p>
+  </div>
+</footer>
+
+<!-- Font Awesome for icons -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js" crossorigin="anonymous"></script>
+
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/919488276520" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+    <div class="whatsapp-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="white">
+        <path d="M19.11 17.09c-.29-.14-1.71-.84-1.97-.93-.27-.1-.46-.14-.65.14-.19.29-.74.93-.9 1.12-.17.19-.33.21-.62.07-.29-.14-1.23-.45-2.35-1.44-.87-.77-1.45-1.72-1.62-2-.17-.29-.02-.44.12-.58.12-.12.29-.33.43-.5.14-.17.19-.29.29-.48.1-.19.05-.36-.02-.5-.07-.14-.65-1.56-.89-2.13-.23-.55-.47-.48-.65-.48-.17 0-.36 0-.55 0-.19 0-.5.07-.76.36-.26.29-1 1-.97 2.42.02 1.43 1.02 2.81 1.17 3 .14.19 2 3.11 4.89 4.37.68.29 1.21.46 1.62.59.68.22 1.3.19 1.79.12.55-.08 1.71-.69 1.95-1.36.24-.67.24-1.25.17-1.36-.07-.12-.26-.19-.55-.33z"/>
+      </svg>
+    </div>
+    <span class="whatsapp-text">WhatsApp Us</span>
+  </a>
+
+  <script src="script.js"></script>
+  <button id="scrollTopBtn" aria-label="Scroll to top">
+  ↑
+</button>
+</body>
+</html>

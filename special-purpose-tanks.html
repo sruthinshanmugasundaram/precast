@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Precast Demo</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+
+  <!-- Loading overlay -->
+  <div id="site-loader" role="status" aria-live="polite" aria-label="Page is loading">
+    <div class="loader-card" id="loader-card">
+      <div class="spinner" aria-hidden="true">
+        <!-- accessible SVG spinner -->
+        <svg viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+          <circle cx="24" cy="24" r="18" fill="none" class="ring"/>
+        </svg>
+      </div>
+      <div class="loader-text">Loading…</div>
+    </div>
+  </div>
+
+
+  <!-- Fixed Header -->
+  <header class="main-header">
+     <img src="logo.png" alt="Company Logo" class="header-logo" />
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    <nav class="navbar">
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+
+        <li class="dropdown">
+          <a href="hollow-core-slabs.html">Elements</a>
+          <ul class="submenu">
+            <li><a href="hollow-core-slabs.html">Hollow core slabs</a></li>
+            <li><a href="columns.html">Columns</a></li>
+            <li><a href="beams.html">Beams (RCC/PT)</a></li>
+            <li><a href="solid-slabs.html">Solid slabs</a></li>
+            <li><a href="wall-panels.html">Wall Panels</a></li>
+            <li><a href="insulated-wall-panels.html">Insulated Wall Panels</a></li>
+            <li><a href="pre-stressed-purlins.html">Pre-stressed purlins</a></li>
+          </ul>
+        </li>
+
+        
+
+        <li class="dropdown">
+          <a href="overview.html">Precast Products ▾</a>
+          <ul class="submenu">
+            <li class="dropdown">
+              <a href="overview.html">Storage Tanks ▸</a>
+              <ul class="submenu">
+                <li><a href="overview.html">Overview</a></li>
+                <li><a href="material-spec.html">Material Specification</a></li>
+                <li><a href="design-parameters.html">Design Parameters</a></li>
+                <li><a href="small-domestic-tanks.html">Small Domestic Tanks</a></li>
+                <li><a href="monolithic-tanks.html">Monolithic Tanks</a></li>
+                <li><a href="custom-factory-assembled.html">Custom Factory Assembled Tanks</a></li>
+                <li><a href="custom-onsite-assembly.html">Custom On Site Assembly Tanks</a></li>
+                <li><a href="special-purpose-tanks.html">Special Purpose Tanks</a></li>
+                <li><a href="summarized-applications.html">Summarized Applications</a></li>
+                <li><a href="installation-procedure.html">Installation Procedure</a></li>
+                <li><a href="dos-and-donts.html">Dos and Don'ts</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="u-drain.html">Storm Water Drains & Sewer Systems ▸</a>
+              <ul class="submenu">
+                <li><a href="u-drain.html">U Drain</a></li>
+                <li><a href="manhole-chamber.html">Manhole Chamber</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="cable-trenches.html">Telecom Electrical Sectors ▸</a>
+              <ul class="submenu">
+                <li><a href="cable-trenches.html">Cable Trenches</a></li>
+                <li><a href="telecommunication-chambers.html">Telecommunication Chambers</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="compound-wall.html">Boundary Wall & Soil Retaining Wall ▸</a>
+              <ul class="submenu">
+                <li><a href="compound-wall.html">Compound Wall & Retaining Wall</a></li>
+                <li><a href="retaining-wall-hollow.html">Retaining Wall using Hollow Core Slabs</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="hollow-core-cladding.html">Cladding Wall ▸</a>
+              <ul class="submenu">
+                <li><a href="hollow-core-cladding.html">Hollow Core Wall as Cladding Wall</a></li>
+                <li><a href="sleek-walls.html">Sleek Walls</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="precast-tiles.html">Architectural Products ▸</a>
+              <ul class="submenu">
+                <li><a href="precast-tiles.html">Precast Concrete Tiles</a></li>
+                <li><a href="concrete-facades.html">Concrete Facades</a></li>
+                <li><a href="concrete-furniture.html">Concrete Furniture</a></li>
+                <li><a href="planters.html">Planters</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="footing.html">Foundation ▸</a>
+              <ul class="submenu">
+                <li><a href="footing.html">Footing</a></li>
+                <li><a href="pedestals.html">Pedestals</a></li>
+                <li><a href="tie-beams.html">Tie beams</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main >
+    <header class="spt-header">
+    <h1>SPECIAL PURPOSE TANKS (To store other Liquids)</h1>
+    <p>Precast Tanks designed for industrial, commercial, and agricultural storage applications.</p>
+  </header>
+
+  <section class="spt-intro">
+    <p>
+      We manufacture Special Purpose Tanks of various capacities as per the clients’ requirements for storing liquids other than water used in various industrial, commercial, and agricultural applications.
+    </p>
+    <p>
+      If the size is small or medium, the entire unit is precast at factory and transported to the site for erection. If the size is larger (above 45 KL), these tanks are built using precast concrete panels cast in the factory and assembled on-site.
+    </p>
+    <p>
+      Each tank design adheres to environmental and safety standards to ensure strength, containment, and compliance with industry norms.
+    </p>
+  </section>
+
+  <section class="spt-tank-section">
+    <h2>RECTANGULAR TANK</h2>
+    <div class="hollowcore-slider">
+    <div class="slider-track">
+      <img src="small_domestic_tank.jpg" alt="Hollow Core Slab 1">
+      <img src="water tank.jpeg" alt="Hollow Core Slab 2">
+      <img src="septis tank.jpg" alt="Hollow Core Slab 3">
+      <img src="industrial-water-tank.jpg" alt="Hollow Core Slab 4">
+      <img src="round-ferrocement-storage-tank.webp" alt="Hollow Core Slab 5">
+      <img src="TANK1.jpg" alt="Hollow Core Slab 6">
+      <img src="TANK2.jpg" alt="Hollow Core Slab 7">
+
+      <!-- Duplicate for seamless loop -->
+      <img src="small_domestic_tank.jpg" alt="Hollow Core Slab 1 duplicate">
+      <img src="water tank.jpeg" alt="Hollow Core Slab 2 duplicate">
+      <img src="septis tank.jpg" alt="Hollow Core Slab 3 duplicate">
+      <img src="industrial-water-tank.jpg" alt="Hollow Core Slab 4 duplicate">
+      <img src="round-ferrocement-storage-tank.webp" alt="Hollow Core Slab 5 duplicate">
+      <img src="TANK1.jpg" alt="Hollow Core Slab 6 duplicate">
+      <img src="TANK2.jpg" alt="Hollow Core Slab 7 duplicate">
+    </div>
+  </div>
+  <section class="rectangular-tank-section fade-in">
+      <div class="tank-header">
+        <h2><i class="fa-solid fa-cube"></i> Loads considered in the design for below ground tanks</h2>
+      </div>
+      <div class="tank-image-box">
+        <img src="DESIGN PARAMETER.png" alt="Typical Model of a Rectangular Tank">
+      </div>
+    </section>
+  </section>
+
+  <section class="spt-gallery">
+    <h2>PRECAST TANK GALLERY</h2>
+    <div class="spt-card-grid">
+
+      <div class="spt-card">
+        <img src="FACTORY MADE.jpg" alt="Factory Made">
+        <div class="spt-card-content"><h3>FACTORY MADE</h3></div>
+      </div>
+
+      <div class="spt-card">
+        <img src="LEAKAGE CHECK.webp" alt="Leakage Check">
+        <div class="spt-card-content"><h3>QUALITY / LEAKAGE CHECK</h3></div>
+      </div>
+
+      <div class="spt-card">
+        <img src="TRANSPORTATION.webp" alt="Transportation">
+        <div class="spt-card-content"><h3>TRANSPORTATION TO SITE</h3></div>
+      </div>
+
+  </section>
+  <section class="spt-gallery">
+    <h2>WATER TANK - INSTALLATION</h2>
+    <div class="spt-card-grid">
+      
+      <div class="spt-card">
+        <img src="excavation.jpg" alt="Excavation">
+        <div class="spt-card-content"><h3>EXCAVATION & BASE PREPARATION</h3></div>
+      </div>
+
+      <div class="spt-card">
+        <img src="positioning.webp" alt="Positioning">
+        <div class="spt-card-content"><h3>POSITIONING OF TANK</h3></div>
+      </div>
+
+ 
+
+      <div class="spt-card">
+        <img src="water tank.jpeg" alt="Tank Cover">
+        <div class="spt-card-content"><h3>POSITIONING OF TANK COVER</h3></div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="faqX-wrapper" class="faqX-wrapper">
+  <div class="faqX-container">
+    <h1 class="faqX-title">Frequently Asked Questions</h1>
+
+    <!-- FAQ items -->
+    <div class="faqX-item">
+      <button class="faqX-q" aria-expanded="false">1. How deep does the excavation need to be if my scenario is different to the guidelines?</button>
+      <div class="faqX-a" hidden>
+        <p>This will depend on whether you are using the lid as a slab or how deep the tank is being buried. Give us a call and we can assist with your requirements.</p>
+      </div>
+    </div>
+
+    <div class="faqX-item">
+      <button class="faqX-q" aria-expanded="false">2. Where can the concrete tank be installed?</button>
+      <div class="faqX-a" hidden>
+        <p>Beneath lawns, gardens, driveways, under garages, sheds, etc.</p>
+      </div>
+    </div>
+
+    <!-- ... repeat for all 17 items ... -->
+    <div class="faqX-item">
+      <button class="faqX-q" aria-expanded="false">3. How do you ensure that there is no gap between the cover slab and the tank wall?</button>
+      <div class="faqX-a" hidden>
+        <p>We are giving a recess in the cover slab and in case if the tank is going to be buried into the soil, we can provide swellable bars, as shown in the figure for a tight water joint.</p>
+      </div>
+    </div>
+
+    <div class="faqX-item">
+      <button class="faqX-q" aria-expanded="false">4. Can you shift the tank after installing?</button>
+      <div class="faqX-a" hidden>
+        <p>Yes. Tanks can be reinstalled after several years. Hooks are provided on tank walls and slabs for safe lifting.</p>
+      </div>
+    </div>
+
+    <div class="faqX-item">
+      <button class="faqX-q" aria-expanded="false">5. What is the provision given in the tank cover for lifting? Should we use any special lifting tackles for handling?</button>
+      <div class="faqX-a" hidden>
+        <p>Standard ropes and D-shackles can be used (ensure the crane and shackles are rated for the tank weight).</p>
+      </div>
+    </div>
+
+    <div class="faqX-item">
+      <button class="faqX-q" aria-expanded="false">6. Is waterproofing done in factory? Which material?</button>
+      <div class="faqX-a" hidden>
+        <p>Yes. Water proofing will be done in the factory. Water proofing Material GRADE : VBR 4503FG – FOOD GRADE ISOPHTHALIC RESIN.</p>
+      </div>
+    </div>
+
+    <div class="faqX-item">
+      <button class="faqX-q" aria-expanded="false">7. How do we connect battery of tanks?</button>
+      <div class="faqX-a" hidden>
+        <p>After placing the tank at site, then do core cutting at tank wall bottom for connection of 2 tank depending on your requirement. After core cutting insert the pipe then pack the gap all around the connection with Epoxy glue.</p>
+      </div>
+    </div>
+
+    <div class="faqX-item">
+      <button class="faqX-q" aria-expanded="false">8. What is the material that will be filled between the tanks, when in case battery of tanks?</button>
+      <div class="faqX-a" hidden>
+        <p>Gaps are to be filled by 6 mm aggregates and compacted properly.</p>
+      </div>
+    </div>
+
+    <div class="faqX-item">
+      <button class="faqX-q" aria-expanded="false">9. How to make holes for pipes?</button>
+      <div class="faqX-a" hidden>
+        <p>We supply tanks without any holes for pipe connections since they cannot be standardised and varies based on the clients’ requirements. Core cutting to be done on the wall as per the requirement, and gaps are to be filled by Epoxy Glue after fixing the pipes.</p>
+      </div>
+    </div>
+
+    <div class="faqX-item">
+      <button class="faqX-q" aria-expanded="false">10. What materials should be used to close the gaps between the pipe and concrete surface?</button>
+      <div class="faqX-a" hidden>
+        <p>Gaps are to be filled by Epoxy Glue.<BR>
+        Show a drawing and the materials that will be filled between the two, connection of sleeves etc</p>
+      </div>
+    </div>
+
+    <div class="faqX-item">
+      <button class="faqX-q" aria-expanded="false">11. Whether water test is done in the factory – what does the IS code says?</button>
+      <div class="faqX-a" hidden>
+        <p>Test for Water Leakage is conducted in the factory itself by filling the water to the full capacity of the tank and keeping it for 24 to find the leakages if any.</p>
+      </div>
+    </div>
+
+    <div class="faqX-item">
+      <button class="faqX-q" aria-expanded="false">12. Heavy vs Medium duty — how to differentiate?</button>
+      <div class="faqX-a" hidden>
+        <p>Based on base slab thickness: Heavy = 150mm; Medium = 125mm. Custom tanks typically heavy duty.</p>
+      </div>
+    </div>
+
+    <div class="faqX-item">
+      <button class="faqX-q" aria-expanded="false">13. What is the meaning of heavy duty and medium duty tanks?</button>
+      <div class="faqX-a" hidden>
+        <p>In Medium Duty tank the entire structure including cover slab have the capacity to bear the load of LMV (Light Motor Vehicle) and the Heavy Duty tank the entire structure including cover slab has the capacity to bear the Heavy Vehicles loads as well as Live Load Surcharge as per IRC Standards.</p>
+      </div>
+    </div>
+
+    <div class="faqX-item">
+      <button class="faqX-q" aria-expanded="false">14. Direct movements of the vehicle on top of the tank are allowed?</button>
+      <div class="faqX-a" hidden>
+        <p>Yes — depends on tank type (Medium/Heavy duty).</p>
+      </div>
+    </div>
+
+    <div class="faqX-item">
+      <button class="faqX-q" aria-expanded="false">15. Does precast tank need regular cleaning?</button>
+      <div class="faqX-a" hidden>
+        <p>The Precast Tank may need to be periodically cleaned as an any other tank and this will depend on many local factors. Please consult a professional tank cleaner if your tank requires cleaning. What we do know is water tastes far better if stored underground (i,e) out of reach to the heat and light in a concrete enclosure.</p>
+      </div>
+    </div>
+
+    <div class="faqX-item">
+      <button class="faqX-q" aria-expanded="false">16. Any permissions needed to install tanks?</button>
+      <div class="faqX-a" hidden>
+        <p>You may need a permit for installing or using the tank from your local municipal authorities. There may require a minimum set back distance from buildings and boundary fences / walls. Your local water supply authority can also advise if you need any additional backflow prevention system and water meters to be installed to water mains, supplying water to the Tanks.</p>
+      </div>
+    </div>
+
+    <div class="faqX-item">
+      <button class="faqX-q" aria-expanded="false">17. Cat – in - Situ RCC Tanks Vs Precast RCC Tanks : Why precast concrete tanks a better option?</button>
+      <div class="faqX-a" hidden>
+        <p>Precast Tanks are factory made using Higher Grade of Concrete and Steel with strict quality control measures.<BR>
+Much number of tanks are cast simultaneously at factory and thus saving the overall time of the project. It ensures speedy execution.<BR>
+Leak proof test is being done at factory itself and need not to do it again at site.<BR>
+Minimum man power is required at site for the erection.<BR>
+Since casting is done at factory, there is no need for collection of raw materials, dumping, mixing, using machineries for concreting etc. are at site.<BR>
+Since minimal activities are to be carried out at site, that too for a shorter duration, it is environmentally friendly and no noise and other kind of pollutions take place at site.<BR>
+Precast tanks ensure site excavation is never kept open for long period of time, therefore reducing inconveniences and minimizing the risk of accidents to both site workers and the public.<BR>
+Precast tanks can be installed as fully buried (even having earth or pavements over the top slab) or partially buried or on ground or above ground level as per the requirement of clients.<BR>
+Precast tanks are relocatable – they can be re-installed in some other location without causing any damage to the structure.<BR>
+Precast tanks are cost effective comparing to the quality, speed of execution, minimum activities at site, immediate usage and relocatable which are not possible in cast -in-situ construction.</p>
+      </div>
+    </div>
+    <!-- end items -->
+  </div>
+</section>
+
+
+  </main>
+
+  <!-- Footer Section -->
+<footer class="site-footer">
+  <div class="footer-container">
+    <!-- Left: Logo + Tagline -->
+    <div class="footer-section">
+      <img src="footerlogo.png" alt="Company Logo" class="footer-logo" />
+      <p class="footer-tagline">INDIA’S FIRST FULLY AUTOMATED PRECAST FACTORY</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/t_v_k_precast_pvt_ltd/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <!-- Middle: Quick Links -->
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="hollow-core-slabs.html">Elements</a></li>
+        <li><a href="overview.html">Precast Products</a></li>
+        <li><a href="products.html">Projects</a></li>
+      </ul>
+    </div>
+
+    <!-- Right: Contact Info -->
+    <div class="footer-section">
+      <h3>Get In Touch</h3>
+      <p>180/3, Thippampalayam,<br>
+         Thippampalayam (PO), Chennimalai - 638051.</p>
+      <p><a href="mailto:tvkprecast@gmail.com">tvkprecast@gmail.com</a></p>
+      <p><a href="tel:+918807190909">+91 88071 90909</a></p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© Copyright 2020 | Powered by <strong>TVK</strong></p>
+  </div>
+</footer>
+
+<!-- Font Awesome for icons -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js" crossorigin="anonymous"></script>
+
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/919488276520" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+    <div class="whatsapp-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="white">
+        <path d="M19.11 17.09c-.29-.14-1.71-.84-1.97-.93-.27-.1-.46-.14-.65.14-.19.29-.74.93-.9 1.12-.17.19-.33.21-.62.07-.29-.14-1.23-.45-2.35-1.44-.87-.77-1.45-1.72-1.62-2-.17-.29-.02-.44.12-.58.12-.12.29-.33.43-.5.14-.17.19-.29.29-.48.1-.19.05-.36-.02-.5-.07-.14-.65-1.56-.89-2.13-.23-.55-.47-.48-.65-.48-.17 0-.36 0-.55 0-.19 0-.5.07-.76.36-.26.29-1 1-.97 2.42.02 1.43 1.02 2.81 1.17 3 .14.19 2 3.11 4.89 4.37.68.29 1.21.46 1.62.59.68.22 1.3.19 1.79.12.55-.08 1.71-.69 1.95-1.36.24-.67.24-1.25.17-1.36-.07-.12-.26-.19-.55-.33z"/>
+      </svg>
+    </div>
+    <span class="whatsapp-text">WhatsApp Us</span>
+  </a>
+
+  <script src="script.js"></script>
+  <button id="scrollTopBtn" aria-label="Scroll to top">
+  ↑
+</button>
+</body>
+</html>
